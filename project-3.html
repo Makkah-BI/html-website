@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Planner</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pantry Chef</h1>
+      <p><em>Cook what you have, Waste less.</em></p>
+      <nav>
+        <a href="#home">Home</a> | <a href="#recipes">Recipes</a> |
+        <a href="#planner">Planner</a> |
+        <a href="#pantry">Pantry</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>What's in your fridge?</h2>
+        <img
+          src="Assets/images/dan-gold-4_jhDO54BYg-unsplash.jpg"
+          alt="ingredients"
+          width="450"
+        />
+        <video width="600" controls>
+          <source src="Assets/media/Recipe-Planner-1.mp4" type="video/mp4" />
+        </video>
+        <p>Enter ingredients, Get recipes, Stop food waste.</p>
+        <textarea
+          rows="2"
+          cols="40"
+          placeholder="e.g., chicken, tomato, onion"
+        ></textarea
+        ><br />
+        <button>Find recipes.</button>
+      </section>
+
+      <section id="recipes">
+        <h2>Popular Recipes</h2>
+
+        <h3>The Problem</h3>
+        <p>
+          People waste food because they forget ingredients and can't decide
+          what to cook. Families lose money and food ends up in landfills.
+        </p>
+
+        <h3>My Approach</h3>
+        <p>
+          I built a tool with pantry tracker with expiry dates, weekly meal
+          planner, recipe ideas and substitution guide. I used tables to
+          organize everything.
+        </p>
+
+        <h3>Hardest Lesson</h3>
+        <p>
+          The data relationships are hard, expiry warnings need Javascript to
+          work dynamically. Also tables inside tables got messy. Hardest part:
+          the site looks functional but doesn't actually work yet.
+        </p>
+
+        <article>
+          <h3>Tuscan Chicken</h3>
+          <img src="Assets/images/Recipe-2.JPG" alt="chicken" width="120" />
+          <p>Chicken, tomato, garlic · ⭐ 4.8</p>
+        </article>
+        <article>
+          <h3>Black bean soup</h3>
+          <img
+            src="Assets/images/cristiano-pinto-2lWGQ02DGL8-unsplash.jpg"
+            alt="soup"
+            width="120"
+          />
+          <p>Beans, onion, garlic · ⭐ 4.6</p>
+        </article>
+      </section>
+
+      <section id="planner">
+        <h2>Weekly meal plan</h2>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th>Day</th>
+            <th>Dinner</th>
+          </tr>
+          <tr>
+            <td>Mon</td>
+            <td>Chicken skillet</td>
+          </tr>
+          <tr>
+            <td>Tue</td>
+            <td>Black bean soup</td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td>Mushroom pasta</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="pantry">
+        <h2>My pantry</h2>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th>Ingredient</th>
+            <th>Expiry</th>
+          </tr>
+          <tr>
+            <td>Chicken</td>
+            <td>2026-03-20</td>
+          </tr>
+          <tr>
+            <td>Tomatoes</td>
+            <td>2026-03-15</td>
+          </tr>
+          <tr>
+            <td>Onion</td>
+            <td>2026-03-25</td>
+          </tr>
+        </table>
+
+        <h3>Substitutions</h3>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th>Missing</th>
+            <th>Use instead</th>
+          </tr>
+          <tr>
+            <td>Butter</td>
+            <td>Oil</td>
+          </tr>
+          <tr>
+            <td>Eggs</td>
+            <td>Banana</td>
+          </tr>
+        </table>
+
+        <h3>Your impact</h3>
+        <p>Waste prevented: 8.5 kg this month.</p>
+      </section>
+
+      <hr />
+
+      <footer>
+        <p>© 2026 pantry chef · <a href="#">Back to Top.</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
