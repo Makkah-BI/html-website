@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
     <title>Petal & Stem</title>
   </head>
   <body>
@@ -27,61 +28,81 @@
       </section>
 
       <section id="about">
-        <h2>Our story</h2>
         <img src="Assets/images/Flower-2.JPG" alt="flower farmer" width="250" />
         <video width="600" controls>
           <source src="Assets/media/228285_medium.mp4" type="video/mp4" />
         </video>
+        <div class="about-content">
+          <h2>Our story</h2>
+          <div class="problem-box">
+            <h3>The Problem</h3>
+            <p>
+              Local flower shops have no online presence. Customers can't find
+              them, see their work, or know their story. They lose business to
+              big online retailers.
+            </p>
+          </div>
 
-        <h3>The Problem</h3>
-        <p>
-          Local flower shops have no online presence. Customers can't find them,
-          see their work, or know their story. They lose business to big online
-          retailers.
-        </p>
+          <div class="approach-box">
+            <h3>My Approach</h3>
+            <p>
+              I built a clean semantic site with header, hero, about, bouquet
+              gallery, and contact form. I used article tags for each bouquet. I
+              added anchor navigation.
+            </p>
+          </div>
 
-        <h3>My Approach</h3>
-        <p>
-          I built a clean semantic site with header, hero, about, bouquet
-          gallery, and contact form. I used article tags for each bouquet. I
-          added anchor navigation.
-        </p>
+          <div class="lesson-box">
+            <h3>Hardest Lesson</h3>
+            <p>
+              Learning semantic tags (article vs section) was confusing. Also
+              realized forms need backend, they look real but don't send emails
+              yet.
+            </p>
+          </div>
 
-        <h3>Hardest Lesson</h3>
-        <p>
-          Learning semantic tags (article vs section) was confusing. Also
-          realized forms need backend, they look real but don't send emails yet.
-        </p>
-
-        <h3>Meet the maker</h3>
-        <img
-          src="Assets/images/IMG_20230414_185140.jpg"
-          alt="florist"
-          width="120"
-        />
-        <p>Hi, I'm Makkah, local florist.</p>
+          <div class="meet-maker">
+            <h3>Meet the maker</h3>
+            <img
+              src="Assets/images/IMG_20230414_185140.jpg"
+              alt="florist"
+              width="120"
+            />
+            <p>Hi, I'm Makkah, local florist.</p>
+          </div>
+        </div>
       </section>
 
       <section id="bouquets">
         <h2>This week's blooms</h2>
-        <article>
-          <h3>Sunshine bouquet</h3>
-          <img src="Assets/images/c5.png" alt="sunflowers" width="150" />
-          <p>Sunflowers, daisies · $45</p>
-        </article>
-        <br />
-        <article>
-          <h3>Wild one</h3>
-          <img src="Assets/images/c6.png" alt="wildflowers" width="150" />
-          <p>Seasonal wildflowers · $38</p>
-        </article>
+
+        <div class="bouquet-grid">
+          <article class="bouquet-card">
+            <h3>Sunshine bouquet</h3>
+            <img src="Assets/images/c5.png" alt="sunflowers" width="150" />
+            <p>Sunflowers, daisies · $45</p>
+          </article>
+          <br />
+          <article class="bouquet-card">
+            <h3>Wild one</h3>
+            <img src="Assets/images/c6.png" alt="wildflowers" width="150" />
+            <p>Seasonal wildflowers · $38</p>
+          </article>
+          <article class="bouquet-card">
+            <h3>Sunshine bouquet</h3>
+            <img src="Assets/images/c5.png" alt="sunflowers" width="150" />
+            <p>Sunflowers, daisies · $45</p>
+          </article>
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Find Us</h2>
-        <p>42 J-lane, Juja</p>
-        <p>+254 712 345 678</p>
-        <p>hello@petalstem.com</p>
+        <div class="contact-info">
+          <h2 class="contact-item">Find Us</h2>
+          <p class="contact-item">42 J-lane, Juja</p>
+          <p class="contact-item">+254 712 345 678</p>
+          <p class="contact-item">hello@petalstem.com</p>
+        </div>
 
         <h3>Send a message</h3>
         <form>
