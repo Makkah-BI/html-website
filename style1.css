@@ -232,31 +232,55 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-.meet-maker {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 50px;
-}
 
-.meet-maker img {
+.meet-maker {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "image text";
+  gap: 1rem 1.5rem;
+  align-items: center;
+  background: #f9f5f0;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   width: 100%;
-  width: 250px;
-  height: 300px;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
 }
 
 .meet-maker h3 {
+  grid-area: title;
   margin: 0;
-  color: #9c6b4f;
-  font-size: 1.3rem;
-  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #3a2e28;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d4b8a5;
+  padding-bottom: 0.4rem;
+}
+
+.meet-maker img {
+  grid-area: image;
+  width: 100%; /* responsive */
+  max-width: 100px; /* consistent size */
+  border-radius: 50%; /* circular portrait */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .meet-maker p {
+  grid-area: text;
   margin: 0;
-  color: #7b5a47;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #2c3e50;
+  line-height: 1.4;
+  font-weight: 400;
 }
